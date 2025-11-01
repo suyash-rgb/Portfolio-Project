@@ -86,3 +86,21 @@ document.querySelectorAll('.project-card').forEach(card => {
     iframe.src = '';
   });
 });
+
+// Add to your script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.skill-item').forEach(item => {
+    const fill = item.querySelector('.skill-fill');
+    const width = fill.style.width;
+    fill.style.setProperty('--target-width', width);
+    observer.observe(item);
+  });
+});
