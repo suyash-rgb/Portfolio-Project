@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suyash Baoney — Portfolio</title>
+  <meta name="description"
+        content="Two-column dark portfolio: left profile card, right content, responsive with collapsible sidebar." />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- ==================== SIDEBAR ==================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="avatar">
+        <img src="portfolio-pic.jpg" alt="Suyash Baoney profile photo" />
+      </div>
+
+      <div class="meta">
+        <div class="name">Suyash Baoney</div>
+        <div class="title muted">Software Engineer</div>
+      </div>
+
+      <ul class="contact-list" aria-label="Contact information">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <a href="mailto:suyashbaoney58@gmail.com"
+             class="copy-email"
+             data-copy="suyashbaoney58@gmail.com">
+             suyashbaoney58@gmail.com
+          </a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Indore, Madhya Pradesh, India
+        </li>
+      </ul>
+
+      <div class="socials">
+        <a class="chip" href="https://github.com/suyash-rgb" target="_blank" rel="noopener">
+          <svg class="chip-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a class="chip" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+          <svg class="chip-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a class="chip" href="https://instagram.com/yourusername" target="_blank" rel="noopener">
+          <svg class="chip-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          Instagram
+        </a>
+      </div>
+
+    </aside>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="main">
+      <!-- Mobile Header -->
+      <div class="mobile-header" id="mobileHeader">
+        <div class="mobile-left">
+          <div class="avatar small">SB</div>
+          <div class="mobile-name">Suyash Baoney</div>
+        </div>
+        <button class="hambtn" id="toggleSidebar" aria-expanded="false">Profile</button>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="topbar">
+        <nav class="nav" role="navigation" aria-label="Main">
+          <a href="#about" class="active" data-tab="about">About</a>
+          <a href="#resume" data-tab="resume">Resume</a>
+          <a href="#portfolio" data-tab="portfolio">Portfolio</a>
+          <a href="#blog" data-tab="blog">Blog</a>
+          <a href="#contact" data-tab="contact">Contact</a>
+        </nav>
+        <!-- <div class="muted">Software Engineer • Full-stack</div> -->
+      </div>
+
+      <!-- ==================== TAB PANELS ==================== -->
+      <div class="tab-panels">
+
+        <!-- ABOUT ME -->
+        <section id="about" class="tab-content active">
+            <h1>About Me</h1>
+            <p class="muted">
+                I’m a curious, impact-driven dev who loves turning ideas into reliable systems. I work across the stack—building
+                Spring Boot microservices with Spring AI, prototyping Python APIs with FastAPI, and crafting frontend
+                experiences with React—so I bring a practical <strong>“jack-of-all-trades”</strong> approach: fast to iterate,
+                rigorous about reliability, and committed to clean, maintainable code.
+            </p>
+            <p class="muted">
+                I’m a strong advocate for Java as a first-class platform for enterprise AI. Java’s performance, mature tooling,
+                and production-grade ecosystem make it ideal for scalable, observable AI systems that serve real users. My focus
+                is on marrying solid engineering practices with modern ML/NLP techniques to build systems that are not only
+                intelligent, but robust, testable, and production-ready.
+            </p>
+               
+            <!-- PERSONAL JOURNEY SECTION -->
+            <div class="personal-journey">
+                <h2>More Than Code</h2>
+                <p class="muted">I’m not just a developer — I’m a <strong>creator</strong>, <strong>storyteller</strong>, and
+                    <strong>lifelong learner</strong>.</p>
+        
+                <div class="journey-grid">
+        
+                    <!-- YouTube Creator -->
+                    <div class="journey-card youtube">
+                        <div class="journey-icon">YouTuber</div>
+                        <h3>Free World Coder</h3>
+                    
+                        <div class="youtube-preview">
+                            <img src="free-world-coder.png" alt="Free World Coder YouTube Channel"
+                                class="youtube-thumb" />
+                            <div class="youtube-info">
+                                <p class="muted">
+                                    <strong>No paywalls. No clickbait. No Topmate.</strong><br>
+                                    I run <em>Free World Coder</em> — a YouTube channel where I build real projects, explore software concepts across languages, and share <strong>100% open-source code</strong> you can fork, learn from, and use freely.
+                                </p>
+                                <p class="muted">
+                                   While 80% of creators chase views with incomplete tutorials and paywalled repos, I’m here to give you <strong>clean, complete, production-ready code</strong> — because learning should be free, and knowledge shouldn’t come with a subscription.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <a href="https://youtube.com/@freeworldcoder" target="_blank" class="btn-outline">
+                            Watch on YouTube
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- Open Source Badge -->
+                    <!-- <div class="open-source-badge">
+                        <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        <span>All code is public on GitHub</span>
+                    </div> -->
+                </div>
+        
+                <!-- Writer & Reader -->
+                <div class="journey-card">
+                    <div class="journey-icon">Open Book</div>
+                    <h3>Writer & Avid Reader</h3>
+                
+                    <div class="medium-preview">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/medium.svg" alt="Medium Logo"
+                            class="medium-logo" />
+                        <div class="medium-info">
+                            <p>Medium is where I turn technical deep-dives into stories that spark ideas. I write about Java’s future,
+                                AI ethics, and real-world dev challenges—one post at a time.</p>
+                            <p class="muted">Deep technical insights. Real-world context. No fluff.</p>
+                        </div>
+                    </div>
+                
+                    <a href="https://medium.com/@suyashbaoney58" target="_blank" class="btn-outline">
+                        Read on Medium
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                        </svg>
+                    </a>
+                </div>
+        
+                <!-- Current Projects -->
+                <div class="journey-card">
+                    <div class="journey-icon">Wrench</div>
+                    <h3>Current Projects</h3>
+                    <ul class="project-list">
+                        <li>
+                            <strong>DocEase: Doctor's Appointment Management PaaS</strong> — Minor College Project<br>
+                            <small class="project-desc">
+                                A patient-first platform that simplifies booking and managing doctor appointments. Patients can search
+                                doctors by specialty, view availability, and book slots instantly. Doctors get real-time dashboards and
+                                notifications. Built with <strong>Java, Spring Boot</strong> (backend), <strong>React</strong>
+                                (frontend), and powered by <strong>Kafka</strong> for event-driven updates and
+                                <strong>WebSockets</strong> for live communication — all running locally for now.
+                            </small>
+                            <a href="https://github.com/suyash-rgb/DocEase/tree/microservices" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </li>
+                
+                        <li>
+                            <strong>Rural Healthcare AI Bot</strong> — Sunstone Hackathon Project<br>
+                            <small class="project-desc">
+                                An AI-powered chatbot for rural India, delivering instant symptom checks, medical advice, and clinic
+                                connections via WhatsApp or web. It uses NLP to understand local languages and triage health issues —
+                                bridging the gap in underserved areas where doctors are scarce. Built with <strong>Python,
+                                    FastAPI</strong> for backend & ML, <strong>Twilio API</strong> for messaging and <strong>Sarvam AI</strong>
+                                for translations and trans-literations
+                            </small>
+                            <a href="https://github.com/suyash-rgb/Sunstone-Hackathon_1.0-Rural-Healthcare-AI-Bot.git" target="_blank"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </li>
+                
+                        <li>
+                            <strong>BusinessBotix</strong> — No-Code AI Chatbot Builder SaaS<br>
+                            <small class="project-desc">
+                                A visual drag-and-drop platform for business owners to build and deploy smart AI chatbots on their
+                                websites — no coding needed. Create conversation flows, train on FAQs, and go live in minutes. Powered
+                                by <strong>React + React Flow</strong> (frontend), <strong>Python FastAPI</strong> (backend), and
+                                <strong>ACDQAs</strong> for advanced conversational AI.
+                            </small>
+                            <a href="https://github.com/suyash-rgb/Conversation-AI-ChatBot-Builder-SaaS.git" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        
+            </div>
+        
+            <!-- Education + Photo (Pushed Down) -->
+            <div class="doing mt">
+                <h2>What I'm doing</h2>
+                <!-- <div class="doing-grid">
+                      <article class="card">
+                        <h3>Web Development</h3>
+                        <p class="muted">High-quality development of sites at the professional level.</p>
+                      </article>
+                      <article class="card">
+                        <h3>Web Design</h3>
+                        <p class="muted">The most modern and high-quality design made at a professional level.</p>
+                      </article> 
+                </div>-->
+            </div>
+            <div class="mca-showcase">
+                <div class="mca-text">
+                    <h3>Pursuing MCA</h3>
+                    <p><strong>Sage University</strong> in collaboration with <strong>Sunstone Eduversity</strong></p>
+                    <p class="muted">Balancing academics with real-world projects and content creation.</p>
+                </div>
+                <img src="mca-sage-sunstone.jpg" alt="Suyash Baoney at Sage University with Sunstone" class="mca-photo" />
+            </div>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume" class="tab-content">
+          <h2>Resume</h2>
+          <div class="timeline">
+            <div class="timeline-item" data-year="2024 – Present">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Full-Stack Developer</h3>
+                <h4 class="muted">TechStart Solutions, Indore</h4>
+                <p>Building scalable MERN applications with Next.js, optimizing performance and SEO. Leading frontend architecture and mentoring junior developers.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-year="2023 – 2024">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Frontend Engineer</h3>
+                <h4 class="muted">CodeZap Studio</h4>
+                <p>Developed responsive web apps using React, Tailwind, and Figma designs. Improved load time by 40% using lazy loading and code splitting.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-year="2019 – 2023">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>B.Tech in Computer Science</h3>
+                <h4 class="muted">IIT Indore</h4>
+                <p>Specialized in Full-Stack Development and Cloud Computing. GPA: 8.7/10. Built 12+ projects including a real-time chat app with WebSockets.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-year="2017 – 2019">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Higher Secondary (XII)</h3>
+                <h4 class="muted">Delhi Public School, Indore</h4>
+                <p>PCM with Computer Science. Scored 94% in CBSE Board Exams. Active member of Coding Club.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="tab-content">
+          <h2>Portfolio</h2>
+          <div class="portfolio-grid">
+
+            <!-- Project 1 -->
+            <article class="project-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <div class="project-thumb">
+                <img src="project1-thumb.jpg" alt="TaskFlow Pro Thumbnail" />
+                <div class="video-preview">
+                  <iframe src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>TaskFlow Pro</h3>
+                <p class="muted">A full-stack task management app with real-time collaboration using Socket.io and React.</p>
+                <div class="project-links">
+                  <a href="#" class="btn-icon" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                  <a href="#" class="btn-icon live" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-video="https://www.youtube.com/embed/9bZkp7q19f0">
+              <div class="project-thumb">
+                <img src="project2-thumb.jpg" alt="E-Commerce Dashboard Thumbnail" />
+                <div class="video-preview">
+                  <iframe src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>E-Commerce Dashboard</h3>
+                <p class="muted">Admin panel with charts, inventory, and order tracking using Chart.js and Node.js.</p>
+                <div class="project-links">
+                  <a href="#" class="btn-icon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387..."/></svg></a>
+                  <a href="#" class="btn-icon live" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-video="https://www.youtube.com/embed/3JZ_D3ELwOQ">
+              <div class="project-thumb">
+                <img src="project3-thumb.jpg" alt="Weather App Thumbnail" />
+                <div class="video-preview">
+                  <iframe src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Weather App</h3>
+                <p class="muted">Real-time weather with geolocation, animations, and dark mode toggle using OpenWeather API.</p>
+                <div class="project-links">
+                  <a href="#" class="btn-icon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12..."/></svg></a>
+                  <a href="#" class="btn-icon live" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4">
+              <div class="project-thumb">
+                <img src="project4-thumb.jpg" alt="Chat App Thumbnail" />
+                <div class="video-preview">
+                  <iframe src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Chat App</h3>
+                <p class="muted">Real-time messaging with file sharing, typing indicators, and encryption using Socket.io.</p>
+                <div class="project-links">
+                  <a href="#" class="btn-icon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12..."/></svg></a>
+                  <a href="#" class="btn-icon live" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card" data-video="https://www.youtube.com/embed/9bZkp7q19f0">
+              <div class="project-thumb">
+                <img src="project5-thumb.jpg" alt="Blog Platform Thumbnail" />
+                <div class="video-preview">
+                  <iframe src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Blog Platform</h3>
+                <p class="muted">Full CMS with Markdown editor, comments, and SEO using Next.js and MongoDB.</p>
+                <div class="project-links">
+                  <a href="#" class="btn-icon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12..."/></svg></a>
+                  <a href="#" class="btn-icon live" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <div class="project-thumb">
+                <img src="project6-thumb.jpg" alt="AI Image Generator Thumbnail" />
+                <div class="video-preview">
+                  <iframe src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>AI Image Generator</h3>
+                <p class="muted">Text-to-image generator using Stable Diffusion API with React and Node.js backend.</p>
+                <div class="project-links">
+                  <a href="#" class="btn-icon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12..."/></svg></a>
+                  <a href="#" class="btn-icon live" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- BLOG -->
+        <section id="blog" class="tab-content">
+            <!-- <h2>Blog</h2> -->
+            <div class="blog-grid">
+        
+                <!-- Article 1 -->
+                <article class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="java-30-thumb.png" alt="Java at 30 article thumbnail" />
+                    </div>
+                    <div class="blog-info">
+                        <h3>Java at 30 : A Journey of Innovation, Endurance, and a Glimpse into the AI Era</h3>
+                        <p class="muted">Reflecting on Java's 30-year legacy, its evolution, and how AI is shaping its future in
+                            enterprise and beyond.</p>
+                        <a href="https://medium.com/@suyashbaoney58/java-at-30-a-journey-of-innovation-endurance-and-a-glimpse-into-the-ai-era-c6443d6a2990"
+                            target="_blank" rel="noopener" class="btn-read">
+                            Read on Medium
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+        
+                <!-- Article 2 -->
+                <article class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="when-bots-pay-the-toll-thumb.png" alt="Cloudflare Pay-Per-Crawl article thumbnail" />
+                    </div>
+                    <div class="blog-info">
+                        <h3>When Bots Pay the Toll : Cloudflare’s Pay-Per-Crawl and the New Economics of AI Scraping</h3>
+                        <p class="muted">Read about how a Cloudflare 522 timeout led me to rethink web scraping: bot management,
+                            Pay‑Per‑Crawl, robots.txt as moral code, and what these shifts mean for developers, researchers, and
+                            a fair web.</p>
+                        <a href="https://medium.com/@suyashbaoney58/when-bots-pay-the-toll-cloudflares-pay-per-crawl-and-the-new-economics-of-ai-scraping-3a64f0f31c59"
+                            target="_blank" rel="noopener" class="btn-read">
+                            Read on Medium
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+        
+                <!-- Article 3 -->
+                <article class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="git-20-thumb.jpeg" alt="Git 20 article thumbnail" />
+                    </div>
+                    <div class="blog-info">
+                        <h3>Git at 20 : How Linus Torvalds' Creation Revolutionized the World</h3>
+                        <p class="muted">A deep dive into Git’s origin, its impact on software development, and why it remains
+                            the backbone of modern collaboration.</p>
+                        <a href="https://www.linkedin.com/pulse/git-20-how-linus-torvalds-creation-revolutionized-world-suyash-baoney-wmmkf"
+                            target="_blank" rel="noopener" class="btn-read">
+                            Read on LinkedIn
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+        
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="tab-content">
+          <h2>Contact</h2>
+          <p class="muted">Get in touch at <a href="mailto:suayashbaoney58@gmail.com">suyashbaoney58@gmail.com</a></p>
+        </section>
+
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt footer">
+        <div class="muted">© <span id="year"></span> Suyash Baoney — Built with HTML, CSS & JavaScript</div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>
