@@ -22,6 +22,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -44,6 +45,7 @@ body {
   margin: 32px auto;
   max-width: var(--maxw);
   padding: 0 18px; /* mobile safety */
+  min-height: calc(100vh - 120px); /* Leave space for footer */
 }
 
 /* Desktop: 40px left gap (your preference) */
@@ -124,6 +126,7 @@ body {
 .contact-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 14px;
   list-style: none;
   margin: 24px 0 0;
@@ -1393,5 +1396,31 @@ body {
 @media (max-width: 900px) {
   .blog-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* FOOTER */
+.site-footer {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+  background: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   RESPONSIVE Footer
+   ======================================== */
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  
+  .site-footer {
+    padding: 20px 16px;
+    font-size: 0.85rem;
   }
 }
