@@ -1211,6 +1211,72 @@ body {
   border-radius: 16px;
 }
 
+/* ========================================
+   THUMBNAIL TOOLTIP
+   ======================================== */
+.thumb-wrapper {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.thumb-wrapper::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.thumb-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.thumb-wrapper:hover::after,
+.thumb-wrapper:hover::before {
+  opacity: 1;
+  visibility: visible;
+  bottom: 16px;
+}
+
+.thumb-wrapper:hover::before {
+  bottom: 10px;
+}
+
+/* Mobile: Show tooltip on tap (optional) */
+@media (max-width: 768px) {
+  .thumb-wrapper::after,
+  .thumb-wrapper::before {
+    display: none; /* Or keep if you want tap-to-show */
+  }
+}
+
 .project-thumb img {
   width: 100%;
   height: 200px;
