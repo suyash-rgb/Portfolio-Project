@@ -104,3 +104,22 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(item);
   });
 });
+
+document.querySelectorAll('.project-card').forEach(card => {
+  const thumb = card.querySelector('.project-thumb');
+  const iframe = card.querySelector('iframe');
+  const videoUrl = card.dataset.video;
+
+  thumb.addEventListener('click', () => {
+    iframe.src = videoUrl;
+    card.classList.add('video-active');
+  });
+
+  // Optional: Close on click outside
+  card.addEventListener('click', (e) => {
+    if (e.target === card && card.classList.contains('video-active')) {
+      iframe.src = '';
+      card.classList.remove('video-active');
+    }
+  });
+});

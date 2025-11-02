@@ -948,7 +948,7 @@ body {
 }
 
 /* ========================================
-   CODING PROGRESS - HACKERRANK & LEETCODE
+   CODING PROGRESS - HACKERRANK, LEETCODE & GitHub Stats
    ======================================== */
 .coding-stats {
   display: grid;
@@ -1145,6 +1145,8 @@ body {
   }
 }
 
+
+
 /* ========================================
    8. TAB SYSTEM
    ======================================== */
@@ -1201,23 +1203,28 @@ body {
 
 .project-thumb {
   position: relative;
-  height: 180px;
+  cursor: pointer;
   overflow: hidden;
+  border-radius: 16px;
 }
 
 .project-thumb img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .video-preview {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
+  background: #000;
   opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+  visibility: hidden;
+  transition: 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-preview iframe {
@@ -1226,12 +1233,13 @@ body {
   border: none;
 }
 
-.project-card:hover .project-thumb img {
-  opacity: 0;
+.project-card.video-active .video-preview {
+  opacity: 1;
+  visibility: visible;
 }
 
-.project-card:hover .video-preview {
-  opacity: 1;
+.project-card.video-active .project-thumb img {
+  opacity: 0;
 }
 
 .project-info {
