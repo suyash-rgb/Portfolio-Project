@@ -110,7 +110,7 @@ const Resume = () => {
                 <div className="timeline-item" data-year="2025">
                     <div className="timeline-dot"></div>
                     <div className="timeline-content">
-                        <span className="timeline-date">2025</span>
+
                         <h3>Master's in Computer Application</h3>
                         <p className="company">ICA, Sage University</p>
                         <p>Currently pursuing a Master's degree in Computer Application with a focus on AI and Machine Learning.</p>
@@ -120,7 +120,7 @@ const Resume = () => {
                 <div className="timeline-item" data-year="2023">
                     <div className="timeline-dot"></div>
                     <div className="timeline-content">
-                        <span className="timeline-date">2023</span>
+
                         <h3>Bachelor's in Computer Application</h3>
                         <p className="company">SVIMS</p>
                         <p>Specialized in Back-end Development. GPA: 6/10. Built 5+ projects including a RESTful API for a task
@@ -131,7 +131,7 @@ const Resume = () => {
                 <div className="timeline-item" data-year="2019">
                     <div className="timeline-dot"></div>
                     <div className="timeline-content">
-                        <span className="timeline-date">2019</span>
+
                         <h3>Higher Secondary (XII)</h3>
                         <p className="company">St. George HSc School, Dhar</p>
                         <p>PCM Stream. Scored 65% in CBSE Board Exams. Led Red House to victory in inter-school competitions.</p>

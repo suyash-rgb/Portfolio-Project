@@ -321,6 +321,7 @@ body {
     margin-bottom: 12px;
     background: linear-gradient(90deg, #fff, var(--accent));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -737,14 +738,14 @@ body {
 
 .timeline {
     position: relative;
-    padding-left: 40px;
+    padding-left: 120px;
     margin: 40px 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 16px;
+    left: 100px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -763,7 +764,7 @@ body {
 .timeline-item::before {
     content: attr(data-year);
     position: absolute;
-    left: -100px;
+    left: -120px;
     top: 4px;
     font-size: 0.9rem;
     color: var(--accent);
@@ -774,7 +775,7 @@ body {
 
 .timeline-dot {
     position: absolute;
-    left: -40px;
+    left: -28px;
     top: 6px;
     width: 16px;
     height: 16px;
@@ -848,21 +849,21 @@ body {
 /* Mobile: Stack timeline */
 @media (max-width: 900px) {
     .timeline {
-        padding-left: 20px;
+        padding-left: 90px;
     }
 
     .timeline::before {
-        left: 8px;
+        left: 70px;
     }
 
     .timeline-item::before {
-        left: -80px;
-        width: 70px;
+        left: -90px;
+        width: 60px;
         font-size: 0.85rem;
     }
 
     .timeline-dot {
-        left: -29px;
+        left: -28px;
     }
 
     .timeline-item {
@@ -955,6 +956,7 @@ body {
     display: block;
     background: linear-gradient(90deg, var(--accent), #a78bfa);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
