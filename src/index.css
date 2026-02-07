@@ -647,6 +647,30 @@ body {
 
 
 /* ========================================
+   TECH SKILLS GRID
+   ======================================== */
+.resume-section {
+    margin-bottom: 32px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.skills-grid img {
+    height: 32px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.skills-grid img:hover {
+    transform: translateY(-2px);
+}
+
+/* ========================================
    SOFT SKILLS - HORIZONTAL BARS
    ======================================== */
 .soft-skills {
