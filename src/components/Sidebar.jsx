@@ -4,7 +4,7 @@ const Sidebar = ({ className }) => {
     return (
         <aside className={`sidebar ${className}`} id="sidebar">
             <div className="avatar">
-                <img src="https://placehold.co/300x300/18283b/ffffff?text=SB" alt="Suyash Baoney profile photo" />
+                <img src="https://res.cloudinary.com/dplwcwhak/image/upload/v1770543472/portfolio-pic_ewnncd.jpg" alt="Suyash Baoney profile photo" />
             </div>
 
             <div className="meta">

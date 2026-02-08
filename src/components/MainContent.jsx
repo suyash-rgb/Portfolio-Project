@@ -27,7 +27,7 @@ const MainContent = ({ onToggleSidebar }) => {
             <div className="mobile-header" id="mobileHeader">
                 <div className="mobile-left" onClick={onToggleSidebar} style={{ cursor: 'pointer' }}>
                     <div className="avatar small">
-                        <img src="https://placehold.co/100x100/18283b/ffffff?text=SB" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <img src="https://res.cloudinary.com/dplwcwhak/image/upload/v1770543472/portfolio-pic_ewnncd.jpg" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                     <span className="profile-text-mobile">Profile</span>
                 </div>
