@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Education from './Education';
 
 const Resume = () => {
     const listRef = useRef([]);
@@ -102,40 +103,7 @@ const Resume = () => {
             </div>
             <br />
 
-            <h2>Education</h2>
-            <div className="resume-section"></div>
-            <div className="timeline">
-                <div className="timeline-item" data-year="2025">
-                    <div className="timeline-dot"></div>
-                    <div className="timeline-content">
-
-                        <h3>Master's in Computer Application</h3>
-                        <p className="company">ICA, Sage University</p>
-                        <p>Currently pursuing a Master's degree in Computer Application with a focus on AI and Machine Learning.</p>
-                    </div>
-                </div>
-
-                <div className="timeline-item" data-year="2023">
-                    <div className="timeline-dot"></div>
-                    <div className="timeline-content">
-
-                        <h3>Bachelor's in Computer Application</h3>
-                        <p className="company">SVIMS</p>
-                        <p>Specialized in Back-end Development. GPA: 6/10. Built 5+ projects including a RESTful API for a task
-                            management app.</p>
-                    </div>
-                </div>
-
-                <div className="timeline-item" data-year="2019">
-                    <div className="timeline-dot"></div>
-                    <div className="timeline-content">
-
-                        <h3>Higher Secondary (XII)</h3>
-                        <p className="company">St. George HSc School, Dhar</p>
-                        <p>PCM Stream. Scored 65% in CBSE Board Exams. Led Red House to victory in inter-school competitions.</p>
-                    </div>
-                </div>
-            </div>
+            <Education />
 
             <div className="resume-section">
                 <h3>Certifications</h3>
