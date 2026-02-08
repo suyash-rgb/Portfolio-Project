@@ -75,8 +75,8 @@ const About = () => {
                     </div>
 
                     <div className="journey-card">
-                        <div className="journey-icon">Wrench</div>
-                        <h3>Current Projects</h3>
+                        <div className="journey-icon">Current Projects</div>
+                        <h3>Building & Scaling</h3>
                         <ul className="project-list">
                             <li>
                                 <strong>DocEase: Doctor's Appointment Management PaaS</strong> — Minor College Project<br />
