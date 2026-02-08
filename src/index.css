@@ -462,7 +462,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.card {
+doing .card {
     background: rgba(255, 255, 255, 0.015);
     border: 1px solid var(--glass);
     border-radius: 12px;
@@ -869,6 +869,7 @@ h2 {
     border-radius: 20px;
     padding: 32px;
     margin-top: 48px;
+    margin-bottom: 160px;
     gap: 32px;
     flex-wrap: wrap;
 }
