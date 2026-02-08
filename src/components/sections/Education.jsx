@@ -10,7 +10,7 @@ const educationData = [
     {
         year: "2023",
         title: "Bachelor's in Computer Application",
-        company: "SVIMS",
+        company: "SVIMS, DAVV University",
         description: "Specialized in Back-end Development. GPA: 6/10. Built 5+ projects including a RESTful API for a task management app."
     },
     {
