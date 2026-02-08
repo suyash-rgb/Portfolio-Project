@@ -8,7 +8,7 @@ const Blog = () => {
 
                 <article className="blog-card">
                     <div className="blog-thumb">
-                        <img src="/images/java-30-thumb.png" alt="Java at 30 article thumbnail" />
+                        <img src="https://res.cloudinary.com/dplwcwhak/image/upload/v1770542920/java-30-thumb_pmesrj.png" alt="Java at 30 article thumbnail" />
                     </div>
                     <div className="blog-info">
                         <h3>Java at 30 : A Journey of Innovation, Endurance, and a Glimpse into the AI Era</h3>
@@ -27,7 +27,7 @@ const Blog = () => {
 
                 <article className="blog-card">
                     <div className="blog-thumb">
-                        <img src="/images/when-bots-pay-the-toll-thumb.png" alt="Cloudflare Pay-Per-Crawl article thumbnail" />
+                        <img src="https://res.cloudinary.com/dplwcwhak/image/upload/v1770542932/when-bots-pay-the-toll-thumb_nsod0z.png" alt="Cloudflare Pay-Per-Crawl article thumbnail" />
                     </div>
                     <div className="blog-info">
                         <h3>When Bots Pay the Toll : Cloudflare’s Pay-Per-Crawl and the New Economics of AI Scraping</h3>
@@ -47,7 +47,7 @@ const Blog = () => {
 
                 <article className="blog-card">
                     <div className="blog-thumb">
-                        <img src="/images/git-20-thumb.jpeg" alt="Git 20 article thumbnail" />
+                        <img src="https://res.cloudinary.com/dplwcwhak/image/upload/v1770542917/git-20-thumb_e6nmxl.jpg" alt="Git 20 article thumbnail" />
                     </div>
                     <div className="blog-info">
                         <h3>Git at 20 : How Linus Torvalds' Creation Revolutionized the World</h3>
