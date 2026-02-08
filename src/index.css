@@ -890,8 +890,8 @@ body {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, var(--accent), transparent);
-    z-index: 1px;
+    background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 90%, transparent 100%);
+    z-index: 1;
 }
 
 .timeline-item {
@@ -988,56 +988,66 @@ body {
 }
 
 /* Mobile: Stack timeline */
+/* Mobile: Keep horizontal layout but tighter */
 @media (max-width: 900px) {
     .timeline {
-        padding-left: 90px;
+        padding-left: 80px;
+        margin: 30px 0;
     }
 
     .timeline::before {
-        left: 70px;
+        left: 60px;
+    }
+
+    .timeline-item {
+        gap: 15px;
+        margin-bottom: 30px;
+        flex-direction: row;
+        /* Ensure row layout */
     }
 
     .timeline-item::before {
-        left: -90px;
-        width: 60px;
-        font-size: 0.85rem;
+        left: -80px;
+        width: 50px;
+        position: absolute;
+        text-align: right;
+        font-size: 0.8rem;
     }
 
     .timeline-dot {
         left: -28px;
-    }
-
-    .timeline-item {
-        flex-direction: column;
-        gap: 8px;
+        top: 6px;
     }
 }
 
-@media (max-width: 520px) {
-    .timeline-item::before {
-        position: static;
-        text-align: left;
-        margin-bottom: 4px;
-        width: auto;
-    }
-
+@media (max-width: 480px) {
     .timeline {
-        padding-left: 0;
+        padding-left: 70px;
     }
 
     .timeline::before {
-        display: none;
+        left: 54px;
+    }
+
+    .timeline-item::before {
+        left: -70px;
+        width: 45px;
+        font-size: 0.75rem;
     }
 
     .timeline-dot {
-        position: static;
-        margin-bottom: 8px;
+        left: -24px;
+        width: 14px;
+        height: 14px;
+        top: 4px;
     }
 
-    .timeline-item {
-        border-left: 3px solid var(--accent);
-        padding-left: 16px;
-        margin-left: 12px;
+    .timeline-content {
+        padding: 16px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1rem;
     }
 }
 
