@@ -108,7 +108,7 @@ const ProjectCard = ({ project }) => {
 const Portfolio = () => {
     return (
         <section id="portfolio">
-            <h2>Projects</h2>
+            <h1>Portfolio</h1>
             <div className="portfolio-grid">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} />

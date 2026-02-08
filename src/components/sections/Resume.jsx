@@ -4,6 +4,7 @@ import Education from './Education';
 const Resume = () => {
     return (
         <section id="resume">
+            <h1>Resume</h1>
             <Skills />
 
             <Education />

@@ -420,18 +420,40 @@ body {
     display: none;
 }
 
-/* About Section */
+/* Global Section Headings */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 32px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 5px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 40px 0 20px;
+    color: #fff;
+}
+
 .about {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.005));
     border: 1px solid var(--glass);
     border-radius: 12px;
     margin-bottom: 18px;
-    padding: 20px;
-}
-
-.about h1 {
-    font-size: 1.4rem;
-    margin: 0 0 10px;
+    padding: 24px;
 }
 
 /* What I'm Doing Grid */
@@ -592,14 +614,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.personal-journey h2 {
-    font-size: 2rem;
-    margin-bottom: 12px;
-    background: linear-gradient(90deg, #fff, var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .journey-grid {
     display: grid;
@@ -1076,9 +1091,7 @@ body {
 /* ========================================
    7. RESUME TIMELINE
    ======================================== */
-.resume h2 {
-    margin-bottom: 24px;
-}
+
 
 .timeline {
     position: relative;

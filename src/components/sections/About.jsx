@@ -19,8 +19,8 @@ const About = () => {
 
             <div className="personal-journey">
                 <h2>More Than Code</h2>
-                <p className="muted">I’m not just a developer — I’m a <strong>creator</strong>, <strong>storyteller</strong>, and
-                    <strong>lifelong learner</strong>.</p>
+                <p className="muted">I’m not just a developer — I’m a <strong>creator</strong>, <strong>storyteller</strong>, and a
+                    <strong> lifelong learner</strong>.</p>
 
                 <div className="journey-grid">
 
