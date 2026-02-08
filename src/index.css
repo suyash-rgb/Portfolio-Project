@@ -618,9 +618,13 @@ h2 {
 
 .journey-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
     margin: 20px 0;
+}
+
+.wide-card {
+    grid-column: 1 / -1;
 }
 
 .journey-card {
@@ -1945,5 +1949,266 @@ h2 {
     .site-footer {
         margin-top: 40px;
         padding: 30px 20px;
+    }
+}
+
+/* ========================================
+   PROJECTS MINI GRID (ABOUT SECTION)
+   ======================================== */
+.projects-mini-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.project-mini-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.mini-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.mini-card-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.3;
+    word-break: break-word;
+}
+
+.project-cat {
+    font-size: 0.85rem;
+    background: var(--accent);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+.summary-text {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.mini-tag {
+    font-size: 0.82rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--muted);
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.mini-tag:hover {
+    background: rgba(124, 58, 237, 0.1);
+    border-color: rgba(124, 58, 237, 0.3);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.mini-card-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-mini-github {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--muted);
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 38px;
+    height: 38px;
+}
+
+.btn-mini-github svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.btn-mini-github:hover {
+    background: #24292e;
+    color: #fff;
+    border-color: #24292e;
+    transform: translateY(-2px);
+}
+
+.btn-read-more {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    height: 38px;
+}
+
+.btn-read-more svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.btn-read-more:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent);
+    gap: 12px;
+}
+
+/* PROJECT DETAIL VIEW */
+.project-detail-view {
+    padding: 20px 0;
+    animation: fadeInPage 0.4s ease;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-back {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.btn-back svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.btn-back:hover {
+    color: #fff;
+}
+
+.detail-header {
+    margin-bottom: 30px;
+}
+
+.detail-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tag {
+    background: rgba(124, 58, 237, 0.1);
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.detail-content h3 {
+    color: #fff;
+    margin: 30px 0 15px;
+    font-size: 1.3rem;
+}
+
+.detail-content p {
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #24292e;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-github:hover {
+    background: #2f363d;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-github svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Mobile Adjustments for Project Mini Cards */
+@media (max-width: 600px) {
+    .mini-card-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .project-cat {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        width: fit-content;
+    }
+
+    .detail-header h1 {
+        font-size: 1.8rem;
     }
 }

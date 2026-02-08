@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   const [activeTab, setActiveTab] = useState('about');
+  const [selectedProject, setSelectedProject] = useState(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   useEffect(() => {
@@ -30,11 +31,15 @@ function App() {
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
+    setSelectedProject(null); // Clear selected project when switching tabs
     if (window.innerWidth <= 900) {
       setIsSidebarOpen(false);
     }
-    // Optional: Scroll more gently or not at all if the navbar is sticky
-    // window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleProjectSelect = (project) => {
+    setSelectedProject(project);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -43,7 +48,13 @@ function App() {
       <div className={`wrap ${isSidebarOpen && window.innerWidth <= 900 ? 'overlay-active' : ''}`}>
         <Sidebar className={isSidebarOpen ? 'show' : 'sidebar-hidden'} />
         <div className="sidebar-overlay" onClick={toggleSidebar}></div>
-        <MainContent activeTab={activeTab} onToggleSidebar={toggleSidebar} />
+        <MainContent
+          activeTab={activeTab}
+          selectedProject={selectedProject}
+          onProjectSelect={handleProjectSelect}
+          onBackFromProject={() => setSelectedProject(null)}
+          onToggleSidebar={toggleSidebar}
+        />
       </div>
       <Footer />
     </div>
