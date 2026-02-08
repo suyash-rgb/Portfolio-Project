@@ -1357,8 +1357,8 @@ h2 {
    ======================================== */
 .coding-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 32px;
     margin-top: 20px;
 }
 
@@ -1410,10 +1410,10 @@ h2 {
 .badge {
     background: rgba(124, 58, 237, 0.2);
     color: var(--accent);
-    padding: 4px 12px;
+    padding: 6px 14px;
     border-radius: 999px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 700;
     border: 1px solid rgba(124, 58, 237, 0.4);
 }
 
@@ -1429,15 +1429,16 @@ h2 {
 }
 
 .stat-value {
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 800;
     color: #fff;
     margin-bottom: 4px;
 }
 
 .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     color: var(--muted);
+    font-weight: 600;
     line-height: 1.3;
 }
 
@@ -1461,10 +1462,10 @@ h2 {
 }
 
 .ring-label {
-    margin-top: 8px;
-    font-size: 0.9rem;
+    margin-top: 10px;
+    font-size: 1.1rem;
     color: var(--muted);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* Animate on load */
@@ -1531,7 +1532,7 @@ h2 {
     justify-content: center;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 12px;
-    padding: 8px;
+    padding: 16px;
     border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
