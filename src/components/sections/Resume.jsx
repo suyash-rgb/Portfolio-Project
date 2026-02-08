@@ -10,7 +10,7 @@ const Resume = () => {
             <Education />
 
             <div className="resume-section">
-                <h3>Certifications</h3>
+                <h2>Certifications</h2>
                 <div className="cert-grid">
                     <div className="cert-card">
                         <div className="cert-icon">Certified</div>
@@ -27,7 +27,7 @@ const Resume = () => {
             </div>
 
             <div className="resume-section">
-                <h3>Workshops & Training</h3>
+                <h2>Workshops & Training</h2>
                 <div className="workshop-grid">
                     <div className="workshop-card">
                         <div className="workshop-icon"></div>
@@ -51,7 +51,7 @@ const Resume = () => {
             <br />
 
             <div className="resume-section">
-                <h3>Coding Progress</h3>
+                <h2>Coding Progress</h2>
                 <div className="coding-stats">
 
                     <div className="platform-card">
