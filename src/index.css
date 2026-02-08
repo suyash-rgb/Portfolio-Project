@@ -111,8 +111,9 @@ body {
 
 .avatar.small {
     font-size: 0.85rem;
-    height: 48px;
-    width: 48px;
+    height: 40px;
+    margin: 0;
+    width: 40px;
 }
 
 .meta {
@@ -290,21 +291,119 @@ body {
     display: none;
     gap: 12px;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 0;
+    background: #0b1220;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    height: 70px;
+    padding: 0 15px 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 101;
 }
 
 .mobile-left {
     align-items: center;
     display: flex;
-    gap: 12px;
+    gap: 8px;
 }
 
 .hambtn {
     background: transparent;
-    border: 1px solid var(--glass);
-    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+    z-index: 101;
+}
+
+.ham-line {
+    background: #fff;
+    border-radius: 2px;
+    height: 2px;
+    transition: all 0.3s ease;
+    width: 24px;
+}
+
+.hambtn.active .ham-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hambtn.active .ham-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hambtn.active .ham-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.profile-text-mobile {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+/* Mobile Nav Menu */
+.mobile-nav-menu {
+    background: var(--panel);
+    border-bottom: 1px solid var(--glass);
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 64px;
+    transition: max-height 0.4s ease;
+    z-index: 100;
+}
+
+.mobile-nav-menu.show {
+    max-height: 300px;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+
+.mobile-nav-links a {
     color: var(--muted);
-    padding: 8px 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-links a.active {
+    color: var(--accent);
+}
+
+/* Sidebar Overlay & Blur */
+.sidebar-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter 0.3s ease;
+}
+
+.overlay-active .sidebar-overlay {
+    display: block;
+    backdrop-filter: blur(8px);
+}
+
+.overlay-active .main {
+    filter: blur(4px);
+    pointer-events: none;
 }
 
 /* ========================================
@@ -615,9 +714,27 @@ body {
     }
 
     .sidebar {
-        margin-left: 0;
         position: fixed;
-        top: auto;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        height: auto;
+        min-height: auto;
+        z-index: 1000;
+        transform: translateY(100vh);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: block !important;
+        /* Override sidebar-hidden */
+        padding: 30px;
+    }
+
+    .sidebar.show {
+        transform: translateY(0);
+    }
+
+    .sidebar-hidden {
+        transform: translateY(100vh);
     }
 
     .mobile-header {

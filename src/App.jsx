@@ -26,8 +26,9 @@ function App() {
   };
 
   return (
-    <div className="wrap">
-      <Sidebar className={isSidebarOpen ? '' : 'sidebar-hidden'} />
+    <div className={`wrap ${isSidebarOpen && window.innerWidth <= 900 ? 'overlay-active' : ''}`}>
+      <Sidebar className={isSidebarOpen ? 'show' : 'sidebar-hidden'} />
+      <div className="sidebar-overlay" onClick={toggleSidebar}></div>
       <MainContent onToggleSidebar={toggleSidebar} />
     </div>
   );

@@ -122,11 +122,11 @@ const Resume = () => {
                             <span className="badge">Active Contributor</span>
                         </div>
                         <div className="github-images">
-                            <img src="https://github-readme-stats.vercel.app/api?username=suyash-rgb&theme=shadow_blue&hide_border=false&include_all_commits=false&count_private=true"
+                            <img src="https://github-readme-stats.vercel.app/api?username=suyash-rgb&show_icons=true&theme=transparent&hide_border=true&title_color=7c3aed&icon_color=7c3aed&text_color=9aa8bf&bg_color=00000000"
                                 alt="GitHub Stats" className="github-card" />
-                            <img src="https://nirzak-streak-stats.vercel.app/?user=suyash-rgb&theme=shadow_blue&hide_border=false"
+                            <img src="https://streak-stats.demolab.com/?user=suyash-rgb&theme=transparent&hide_border=true&stroke=7c3aed&ring=7c3aed&fire=7c3aed&currStreakNum=7c3aed"
                                 alt="GitHub Streak" className="github-card" />
-                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=suyash-rgb&theme=shadow_blue&hide_border=false&include_all_commits=false&count_private=true&layout=compact"
+                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=suyash-rgb&theme=transparent&hide_border=true&layout=compact&title_color=7c3aed&text_color=9aa8bf&bg_color=00000000"
                                 alt="Top Languages" className="github-card" />
                         </div>
                     </div>

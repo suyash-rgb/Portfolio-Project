@@ -8,9 +8,12 @@ import Contact from './sections/Contact';
 const MainContent = ({ onToggleSidebar }) => {
     const [activeTab, setActiveTab] = useState('about');
 
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
     const handleTabClick = (e, tab) => {
         e.preventDefault();
         setActiveTab(tab);
+        setIsNavOpen(false); // Close mobile nav when a link is clicked
         // Smooth scroll to top of content
         const tabPanels = document.querySelector('.tab-panels');
         if (tabPanels) {
@@ -19,23 +22,36 @@ const MainContent = ({ onToggleSidebar }) => {
     };
 
     return (
-        <main className="main">
+        <main className={`main ${isNavOpen ? 'nav-open' : ''}`}>
             {/* Mobile Header */}
             <div className="mobile-header" id="mobileHeader">
-                <div className="mobile-left">
+                <div className="mobile-left" onClick={onToggleSidebar} style={{ cursor: 'pointer' }}>
                     <div className="avatar small">
                         <img src="https://placehold.co/100x100/18283b/ffffff?text=SB" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
-                    <div className="mobile-name">Suyash Baoney</div>
+                    <span className="profile-text-mobile">Profile</span>
                 </div>
+
                 <button
-                    className="hambtn"
-                    id="toggleSidebar"
-                    aria-expanded="false"
-                    onClick={onToggleSidebar}
+                    className={`hambtn ${isNavOpen ? 'active' : ''}`}
+                    onClick={() => setIsNavOpen(!isNavOpen)}
+                    aria-label="Toggle Navigation"
                 >
-                    Profile
+                    <span className="ham-line"></span>
+                    <span className="ham-line"></span>
+                    <span className="ham-line"></span>
                 </button>
+            </div>
+
+            {/* Mobile Nav Menu */}
+            <div className={`mobile-nav-menu ${isNavOpen ? 'show' : ''}`}>
+                <nav className="mobile-nav-links">
+                    <a href="#about" className={activeTab === 'about' ? 'active' : ''} onClick={(e) => handleTabClick(e, 'about')}>About</a>
+                    <a href="#resume" className={activeTab === 'resume' ? 'active' : ''} onClick={(e) => handleTabClick(e, 'resume')}>Resume</a>
+                    <a href="#portfolio" className={activeTab === 'portfolio' ? 'active' : ''} onClick={(e) => handleTabClick(e, 'portfolio')}>Portfolio</a>
+                    <a href="#blog" className={activeTab === 'blog' ? 'active' : ''} onClick={(e) => handleTabClick(e, 'blog')}>Blog</a>
+                    <a href="#contact" className={activeTab === 'contact' ? 'active' : ''} onClick={(e) => handleTabClick(e, 'contact')}>Contact</a>
+                </nav>
             </div>
 
             {/* Desktop Nav */}

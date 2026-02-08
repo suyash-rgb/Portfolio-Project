@@ -29,7 +29,7 @@ const About = () => {
                         <h3>Free World Coder</h3>
 
                         <div className="youtube-preview">
-                            <img src="https://placehold.co/100x100/ff0000/ffffff?text=FWC" alt="Free World Coder YouTube Channel"
+                            <img src="https://res.cloudinary.com/dplwcwhak/image/upload/v1770543471/free-world-coder_uxgttz.png" alt="Free World Coder YouTube Channel"
                                 className="youtube-thumb" />
                             <div className="youtube-info">
                                 <p className="muted">
@@ -145,7 +145,7 @@ const About = () => {
                         <p><strong>Sage University</strong> in collaboration with <strong>Sunstone Eduversity</strong></p>
                         <p className="muted">Balancing academics with real-world projects and content creation.</p>
                     </div>
-                    <img src="https://placehold.co/220x220/123456/ffffff?text=MCA" alt="Suyash Baoney at Sage University with Sunstone" className="mca-photo" />
+                    <img src="https://res.cloudinary.com/dplwcwhak/image/upload/v1770543396/mca-sage-sunstone_vmkzkv.png" alt="Suyash Baoney at Sage University with Sunstone" className="mca-photo" />
                 </div>
             </div>
         </section>
