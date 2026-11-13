@@ -231,7 +231,7 @@ export default function JourneyManager({ user, onRequireAuth }) {
                                     {getTypeIcon(item.type)}
                                     <span>{item.type.toUpperCase()}</span>
                                 </span>
-                                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.82rem', fontWeight: 700, color: '#94a3b8' }}>
+                                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-dim)' }}>
                                     {item.year}
                                 </span>
                             </div>
@@ -377,3 +377,4 @@ export default function JourneyManager({ user, onRequireAuth }) {
         </section>
     );
 }
+

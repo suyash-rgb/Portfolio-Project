@@ -57,3 +57,4 @@ The studio will run at `http://localhost:5174`.
     ├── index.css             # Dark modern UI styling
     └── main.jsx              # React DOM entry
 ```
+

@@ -46,8 +46,8 @@ export default function App() {
 
             {!isSupabaseConfigured && (
                 <div style={{
-                    background: 'rgba(245, 158, 11, 0.1)',
-                    border: '1px solid rgba(245, 158, 11, 0.3)',
+                    background: '#fffbeb',
+                    border: '1px solid #fde68a',
                     borderRadius: '12px',
                     padding: '14px 18px',
                     marginBottom: '24px',
@@ -55,7 +55,7 @@ export default function App() {
                     alignItems: 'center',
                     justifyContent: 'space-between',
                     gap: '12px',
-                    color: '#fbbf24',
+                    color: '#b45309',
                     fontSize: '0.88rem'
                 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -141,3 +141,4 @@ export default function App() {
         </div>
     );
 }
+

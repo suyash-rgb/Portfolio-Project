@@ -32,3 +32,4 @@ export const clearSupabaseCredentials = () => {
     localStorage.removeItem('sb_anon_key');
     window.location.reload();
 };
+

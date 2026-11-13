@@ -75,7 +75,7 @@ export default function Portfolio() {
                     In your Supabase dashboard, navigate to the <strong>SQL Editor</strong> tab on the left sidebar. 
                     Open the file <code>supabase-schema.sql</code> included in this project, copy its contents, and hit <strong>Run</strong>.
                 </p>
-                <div style={{ background: 'rgba(124, 58, 237, 0.08)', border: '1px dashed rgba(168, 85, 247, 0.4)', borderRadius: '8px', padding: '12px 16px', color: '#c084fc', fontSize: '0.84rem' }}>
+                <div style={{ background: '#f5f3ff', border: '1px dashed #c4b5fd', borderRadius: '8px', padding: '12px 16px', color: '#6d28d9', fontSize: '0.84rem' }}>
                     ✓ Creates <code>projects</code>, <code>blogs</code>, and <code>journey</code> tables with Row-Level Security (RLS).<br/>
                     ✓ Configures <code>portfolio-assets</code> storage bucket with public read access.<br/>
                     ✓ Automatically seeds your existing portfolio data (LinkLitez, PresencePulse, Medium articles, etc.).
@@ -123,3 +123,4 @@ export default function Portfolio() {
         </section>
     );
 }
+

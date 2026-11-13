@@ -135,3 +135,4 @@ export default function Navbar({ user, onOpenAuth, onSignOut }) {
         </header>
     );
 }
+

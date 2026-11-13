@@ -265,7 +265,7 @@ export default function ProjectsManager({ user, onRequireAuth }) {
                                     borderRadius: '8px',
                                     overflow: 'hidden',
                                     marginBottom: '14px',
-                                    background: '#040711'
+                                    background: '#f1f5f9'
                                 }}>
                                     <img 
                                         src={item.image_url} 
