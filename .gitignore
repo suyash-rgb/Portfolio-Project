@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Large media files not part of CMS
+*.mp4
+*.pptx
+*.docx
+filler*
+for thumb*
+vid_thumbnail.png
+free-world-coder.png
+git-20-thumb.jpeg
+invoice.png
+java-30-thumb.png
+linklitez.png
+mca-sage-sunstone.png
+persence-pulse.jpg
+portfolio-pic.jpg
+quirky-roomie.png
+sageandsunstone.webp
+smart-email.webp
+when-bots-pay-the-toll-thumb.png
+script.js
